@@ -78,22 +78,22 @@ int main()
         while ( _kbhit() )
         {
             input = _getch();
-            if (input == 68 || input == 100 && dir != Left)//RIGHT
+            if ((input == 68 || input == 100) && dir != Left)//RIGHT
             {
                 dir = Right;
                 break;
             }
-            else if (input == 65 || input == 97 && dir != Right)//LEFT
+            else if ((input == 65 || input == 97) && dir != Right)//LEFT
             {
                 dir = Left;
                 break;
             }
-            else if (input == 119 || input == 87 && dir != Down)//UP
+            else if ((input == 119 || input == 87) && dir != Down)//UP
             {
                 dir = Up;
                 break;
             }
-            else if (input == 83 || input == 115 && dir != Up)//DOWN
+            else if ((input == 83 || input == 115) && dir != Up)//DOWN
             {
                 dir = Down;
                 break;
